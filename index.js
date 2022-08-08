@@ -29,7 +29,7 @@ const start = async () => {
     await mongoose.connect(
       `mongodb+srv://vados:${process.env.MONGO_PASSWORD}@cluster0.e00v3.mongodb.net/?retryWrites=true&w=majority`
     );
-    const server = app.listen(process.env.PORT, () =>
+    const server = app.listen(process.env.PORT || 5001, () =>
       console.log(`Server Started on Port ${process.env.PORT}`)
     );
 
