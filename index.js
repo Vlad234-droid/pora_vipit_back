@@ -20,9 +20,7 @@ app.use(
 
 app.use(cors());
 app.use(express.json());
-app.get("/", (req, res) => {
-  res.send("Welcome");
-});
+
 app.use("/api/auth", userRoutes);
 app.use("/api", messageRoute);
 
