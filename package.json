@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "--max-http-header-size=650472 index.js"
+    "start": "nodemon --max-http-header-size=650472 index.js"
   },
   "author": "",
   "license": "ISC",
