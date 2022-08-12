@@ -20,7 +20,11 @@ app.use(
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://poravipit.netlify.app"],
+    origin: [
+      "http://localhost:3000",
+      "https://poravipit.netlify.app",
+      "192.168.0.146:3000",
+    ],
   })
 );
 app.use(express.json());
