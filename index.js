@@ -23,7 +23,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://poravipit.netlify.app",
-      "192.168.0.146:3000",
+      "http://192.168.0.146:3000",
     ],
   })
 );
