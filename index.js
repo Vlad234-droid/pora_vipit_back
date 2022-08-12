@@ -20,7 +20,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://poravipit.netlify.app",
+    origin: "http://localhost:3000",
   })
 );
 app.use(express.json());
@@ -39,7 +39,7 @@ const start = async () => {
 
     const io = socket(server, {
       cors: {
-        origin: "https://poravipit.netlify.app",
+        origin: "http://localhost:3000",
         credentials: true,
       },
     });
